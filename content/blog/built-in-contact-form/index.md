@@ -23,11 +23,11 @@ title: Built-in Contact Form
 ### Functional Form
 
 This theme has a **form-to-email** feature built in, thanks to the simple Formspree integration. All you need to activate the form is a valid recipient email address saved in the front matter of the form
-(`/content/forms/contact.md`). Of course, the example shown below (`your@email.here`) must not be used. Please use your actual email address.
+(`/content/forms/contact.md`). Of course, the example shown below (`dnicolapm@gmail.com`) must not be used. Please use your actual email address.
 
 ```toml
 # please replace with a valid Formspree form id or email address
-formspree_form_id: your@email.here
+formspree_form_id: dnicolapm@gmail.com
 ```
 
 Update that file and you're ready to begin receiving submissions. Just submit

@@ -1,8 +1,8 @@
 baseURL: /
 theme: hugo-apero
 languageCode: en
-title: Hugo Apéro
-author: Alison Hill
+title: Daniel Nicola
+author: Daniel Nicola
 copyright: ''
 googleAnalytics: ''
 disqusShortname: ''
@@ -34,13 +34,10 @@ params:
   customheadingFontFamily: Fraunces
   customtextFontFamily: Commissioner
   description: A modern, beautiful, and easily configurable blog theme for Hugo.
-  favicon: /img/favicon.ico
+  favicon: /img/clover.ico
   headingFontFamily: sans-serif
-  logo: /img/blogophonic-mark-dark.png
-  mainSections:
-    - blog
-    - project
-    - talk
+  logo: /img/nicola_logo.png
+  mainSections: ''
   math:
     renderer: katex
   navallcaps: yes
@@ -50,29 +47,27 @@ params:
   social:
     - icon: github
       icon_pack: fab
-      url: https://github.com/apreshill/apero
+      url: https://github.com/nicolabmx
     - icon: facebook-square
       icon_pack: fab
-      url: https://www.facebook.com/hashtag/ap%C3%A9ro
+      url: https://www.facebook.com/nicolabmx
     - icon: instagram
       icon_pack: fab
-      url: https://www.instagram.com/explore/tags/apero/
+      url: https://www.instagram.com/nicolabmx
     - icon: twitter
       icon_pack: fab
-      url: https://twitter.com/hashtag/apéro
-    - icon: impactstory
-      icon_pack: ai
-      url: https://impactstory.org/u/0000-0002-8082-1890
+      url: https://twitter.com/nicolabmx
     - icon: orcid
       icon_pack: ai
-      url: http://orcid.org/0000-0002-8082-1890
-    - icon: rss
-      icon_pack: fas
-      url: /blog/index.xml
+      url: https://orcid.org/0000-0003-3381-3465
+    - icon: google-scholar
+      icon_pack: ai
+      url: https://scholar.google.com/citations?user=H7PboBIAAAAJ&hl=en
+    
   socialInFooter: yes
   socialInHeader: no
   textFontFamily: sans-serif
-  theme: sky
+  theme: grayscale
   twitter: apreshill
   utterances:
     issue_term: pathname
@@ -90,14 +85,14 @@ menu:
       title: License
       url: /license/
       weight: 1
-    - name: Contact
-      title: Contact form
-      url: /contact/
-      weight: 2
-    - name: Contributors
-      title: Contributors
-      url: /contributors/
-      weight: 3
+    # - name: Contact
+    #   title: Contact form
+    #   url: /contact/
+    #   weight: 2
+    # - name: Contributors
+    #   title: Contributors
+    #   url: /contributors/
+    #   weight: 3
   header:
     - name: About
       title: About Blogophonic
@@ -107,22 +102,22 @@ menu:
       title: Blog
       url: /blog/
       weight: 2
-    - name: Projects
-      title: Project Portfolio
-      url: /project/
-      weight: 3
-    - name: Talks
-      title: Talks
-      url: /talk/
-      weight: 4
-    - name: A collection
-      title: A collection
-      url: /collection/
-      weight: 5
-    - name: Elements
-      title: Element Page
-      url: /elements/
-      weight: 6
+    # - name: Projects
+    #   title: Project Portfolio
+    #   url: /project/
+    #   weight: 3
+    # - name: Talks
+    #   title: Talks
+    #   url: /talk/
+    #   weight: 4
+    # - name: A collection
+    #   title: A collection
+    #   url: /collection/
+    #   weight: 5
+    # - name: Elements
+    #   title: Element Page
+    #   url: /elements/
+    #   weight: 6
 privacy:
   disqus:
     disable: no
