@@ -1,8 +1,13 @@
 ---
-action_label: Read More &rarr;
-action_link: /about
+action_label: Read Posts &rarr;
+action_link: /blog
 action_type: text
-description: I am in my quest to learn, so here I share a little bit of what I do.
+description: 
+ "I turn data into insights. \n
+ 
+  I try to do it all, from data cleaning to results communication using charts and interactive         dashboards.\n
+  
+  In this blog I share/learn/teach/show/... "
 image_left: true
 images:
 - img/nicola_cartoon.png
