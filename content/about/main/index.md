@@ -6,7 +6,7 @@ use_featured: false # if false, use most recent by date
 number_categories: 0 # set to zero to exclude
 show_intro: true
 intro: |
-  I am a Data Scientist based in Vienna, Austria. I work with R (most of the time) analyzing data, developing models and creating Shiny dashboards. Still enjoy riding my bmx and racing when I get the chance.
+  I am a Data Scientist based in Vienna, Austria. I work with R (most of the time) analyzing data, developing models and creating Shiny dashboards. I enjoy riding my bmx and racing when I get the chance.
   
   Back in my home country, lovely Ecuador, I studied mechanical engineering and an MBA. I also did a Data Analysis, Process Improvement and Decision Making (yeap, short name) Master in Spain and a PhD in Management here in Vienna.
   
