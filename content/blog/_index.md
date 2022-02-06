@@ -9,7 +9,7 @@ cascade:
   #   show_sidebar_adunit: false
   #   text_link_label: View recent posts
   #   text_link_url: /blog/
-description: ""
+description: "Find R posts in the [R](/categories/r/) and in the [R en español](/categories/r-en-español/) categories. Everything else, interesting or not, is in [Random Stuff](/categories/random-stuff/)"
 layout: list
 show_author_byline: true
 show_button_links: false
