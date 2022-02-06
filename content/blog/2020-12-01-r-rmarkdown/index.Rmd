@@ -2,7 +2,7 @@
 title: "Hola no ve"
 author: "Daniel Nicola"
 date: '2021-02-04T16:51:14-05:00'
-categories: ["R"]
+categories: ["R_posts"]
 tags: ["R Markdown", "plot", "regression"]
 ---
 

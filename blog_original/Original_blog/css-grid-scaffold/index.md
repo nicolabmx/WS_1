@@ -1,7 +1,7 @@
 ---
 author: Eric Anderson
 categories:
-- Theme Features
+#- Theme Features
 date: "2019-07-02"
 draft: false
 excerpt: Grid is the very first CSS module created specifically to solve the layout
