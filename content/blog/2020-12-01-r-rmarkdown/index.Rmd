@@ -1,20 +1,26 @@
 ---
 title: "Hola no ve"
 author: "Daniel Nicola"
-date: '2021-02-04T16:51:14-05:00'
-categories: ["R-Posts"]
-tags: ["R Markdown", "plot", "regression"]
+date: '2021-02-06'
+categories: ["R en Español"]
+tags: ["R Markdown"]
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(collapse = TRUE)
 ```
 
-# R Markdown
+# El primer post es siempre una prueba...
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+Si ya conoces R Markdown, sabes que te ayuda a crear documentos en formato HTML, PDF, MS Word...
 
-You can embed an R code chunk like this:
+Puedes mirar más detalles en <http://rmarkdown.rstudio.com>.
+
+Cada vez que postee algo de 'R', usaré esto. Para ver un ejemplo de lo que puede hacer:
+
+# Código de R
+
+Un summary y una regresión:
 
 ```{r cars}
 summary(cars)
@@ -22,9 +28,9 @@ fit <- lm(dist ~ speed, data = cars)
 fit
 ```
 
-# Including Plots
+# Incluir un post, dashboard... (por ahora un post)
 
-You can also embed plots. See Figure \@ref(fig:pie) for example:
+Un código de un post sencillo pero perfecto para un ejemplo inicial:
 
 ```{r pie, fig.cap='A fancy pie chart.', tidy=FALSE}
 par(mar = c(0, 1, 0, 1))
@@ -35,3 +41,5 @@ pie(
   init.angle = -50, border = NA
 )
 ```
+
+A ver si posteas algo más interesante la próxima Nicola!
