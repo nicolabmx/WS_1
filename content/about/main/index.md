@@ -16,7 +16,7 @@ intro: |
   
   -------------------------------------------------------------------
   
-  (As long as there's spare time, I'm open for collaboration, research and voluntary activities)
+  (I'm open for collaboration, research and voluntary activities)
   
   
   
