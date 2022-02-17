@@ -1,0 +1,20 @@
+---
+title: "Style your R Script"
+author: "Daniel Nicola"
+date: '2021-02-17'
+categories: ["R Posts"]
+tags: ["R Markdown"]
+---
+
+
+
+<p>If you’re an <code>R</code> user, this might be (extremely) helpful. Styling your code might be a pain in the a$$. Even worse, receiving messy code from someone else… <strong>What if I told you that you can style your code with one single line of code?</strong></p>
+<p>Well, a few weeks ago I was in front of a very messy code and started tidying it line by line… after a few minutes I had enough. I am not a tidy coder myself, but I try to keep my code understandable. Nevertheless, sometimes you’re just doing things on the go and forget the guidelines you’re supposed to follow when writing <code>R</code> scripts. Here’s an example of them <a href="http://web.stanford.edu/class/cs109l/unrestricted/resources/google-style.html">Google’s R Style Guide</a>.</p>
+<p>So if you have scripts that are just too long to be <em>styled</em>, check this out!</p>
+<div id="the-magic-of-styler" class="section level2">
+<h2>The magic of Styler</h2>
+<p>The <a href="https://www.rdocumentation.org/packages/styler/versions/1.6.2">Styler package</a> has been around for a while and makes your styling easy and quick. As you can see in the documentation, there are lots of things to set and style, but with this <strong>one line</strong> of code you get your script tidy and ready to be shared with others.</p>
+<pre class="r"><code>library(styler)
+styler:::style_active_file()</code></pre>
+<p>I saved valuable minutes of my life with this (with code from others as well as mine). Hope it helps you!</p>
+</div>

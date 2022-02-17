@@ -1,0 +1,24 @@
+---
+title: "Style your R Script"
+author: "Daniel Nicola"
+date: '2021-02-17'
+categories: ["R Posts"]
+tags: ["R Markdown"]
+---
+
+If you're an `R` user, this might be (extremely) helpful. Styling your code might be a pain in the a\$\$. Even worse, receiving messy code from someone else... **What if I told you that you can style your code with one single line of code?**
+
+Well, a few weeks ago I was in front of a very messy code and started tidying it line by line... after a few minutes I had enough. I am not a tidy coder myself, but I try to keep my code understandable. Nevertheless, sometimes you're just doing things on the go and forget the guidelines you're supposed to follow when writing `R` scripts. Here's an example of them [Google's R Style Guide](http://web.stanford.edu/class/cs109l/unrestricted/resources/google-style.html).
+
+So if you have scripts that are just too long to be *styled*, check this out!
+
+## The magic of Styler
+
+The [Styler package](https://www.rdocumentation.org/packages/styler/versions/1.6.2) has been around for a while and makes your styling easy and quick. As you can see in the documentation, there are lots of things to set and style, but with this **one line** of code you get your script tidy and ready to be shared with others.
+
+```{r eval=FALSE}
+library(styler)
+styler:::style_active_file()
+```
+
+I saved valuable minutes of my life with this (with code from others as well as mine). Hope it helps you!
