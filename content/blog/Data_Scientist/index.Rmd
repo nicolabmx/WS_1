@@ -1,0 +1,27 @@
+---
+title: "Data Science is...?"
+author: "Daniel Nicola"
+date: '2022-02-22'
+categories: ["R Posts", "Random Stuff"]
+tags: ["Data Science"]
+---
+
+As a Data Scientist, have you ever been asked what data science is? Have you struggle to answer?
+
+I've found myself in this situation before, and just started talking and talking yet failing to give a clear answer. The short answer is: **"everything that has to do with data"**.
+
+To start, data has to be sourced somehow and from somewhere, this is usually done by data engineers or software engineers (data scientists' best friends in the whole wide universe). Although if you're in a small team or working alone, you might have to do this yourself. So add this part to data science.
+
+After having some data, you might (most likely) have to clean it, prepare it, reclean it, reprepare it, reclean it, reprepare it (ad infinitum)... then explore it, build and train models, test models, automate processes, build and come up with visualizations to communicate results, all this while having (hopefully) some version control tools helping you keep sane. Add machine learning & deep learning to the mix. So yes, a whole lot of shit mixed together.
+
+That is why you find data scientists that are very different from each other, from the ones working with traditional models (e.g. the good old lm's) to the ones tuning neural nets for image and speech recognition. However, there's one thing they all have in common, **learning non-stop**.
+
+Take a look at this video, it'll definitely clarify what data science is:
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/xC-c7E5PK0Y" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen="" title="YouTube Video"></iframe>
+
+</div>
+
+
+Clear like water, right? If not, give it a couple more reads. Adeu! 
