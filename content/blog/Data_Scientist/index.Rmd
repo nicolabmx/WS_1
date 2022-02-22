@@ -6,7 +6,7 @@ categories: ["R Posts", "Random Stuff"]
 tags: ["Data Science"]
 ---
 
-As a Data Scientist, have you ever been asked what data science is? Have you struggle to answer?
+As a Data Scientist, have you ever been asked what data science is? Have you struggled to answer?
 
 I've found myself in this situation before, and just started talking and talking yet failing to give a clear answer. The short answer is: **"everything that has to do with data"**.
 
