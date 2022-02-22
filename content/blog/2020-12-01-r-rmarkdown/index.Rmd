@@ -1,7 +1,7 @@
 ---
 title: "Hola no ve"
 author: "Daniel Nicola"
-date: '2021-02-06'
+date: '2022-02-06'
 categories: ["R en Español"]
 tags: ["R Markdown"]
 ---
