@@ -45,6 +45,9 @@ params:
   orgName: RStudio
   sharing_image: /img/papillons.jpg
   social:
+    - icon: linkedin
+      icon_pack: fab
+      url: https://linkedin.com/in/nicoladan
     - icon: github
       icon_pack: fab
       url: https://github.com/nicolabmx
