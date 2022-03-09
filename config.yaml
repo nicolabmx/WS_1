@@ -51,6 +51,9 @@ params:
     - icon: github
       icon_pack: fab
       url: https://github.com/nicolabmx
+    - icon: youtube
+      icon_pack: fab
+      url: https://www.youtube.com/channel/UCBeCctQKX4jaz9YoGbEs4rQ
     - icon: facebook-square
       icon_pack: fab
       url: https://www.facebook.com/nicolabmx
