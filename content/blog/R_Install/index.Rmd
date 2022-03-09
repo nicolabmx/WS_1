@@ -1,0 +1,22 @@
+---
+title: "El primerísimo paso para usar R"
+author: "Daniel Nicola"
+date: '2022-03-09'
+categories: ["R Posts", "R en Español"]
+tags: ["R Markdown", "R", "Data Science"]
+---
+
+Hola a todos, hola mami, me hice youtuber.
+
+Tuve que descargar R y actualizar R Studio, y además, por preguntas de un amigo, me decidí por hacer un video sobre cómo puedes instalar R y R Studio (para windows, aunque da casi igual el OS que tengan, los pasos se parecen).
+
+Si eres nuevo en Data Science, estarás empezando a instalar programas y a mirar qué puedes hacer con ellos. Si es que estás aprendiendo R, este es el primer paso que debes tomar (duh): instalar R. Y para que todo sea más fácil, instala también R Studio. En el video puedes mirar como instalar las versiones de código abierto, aunque también existen versiones pagadas de R Studio, pero valen la pena para empresas o grupos que requieran ciertos requisitos que la versión gratuita no tenga. Si es que lo utilizas para uso individual/personal, la versión gratuita es suficiente.
+
+Aquí está el video:
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/w0-HZpBQGUU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen="" title="YouTube Video"></iframe>
+
+</div>
+
+También me encontré unos videos más viejos del señor Nicola con su bici, ahí veránfff. A ver si voy subiendo más cosas con el tiempo para poder enseñar a la gente lo que se puede hacer con R, empezando desde cosas básicas o lo que a alguna persona se le ocurra preguntar. Y como todo youtuber dice: like and subscribe.
