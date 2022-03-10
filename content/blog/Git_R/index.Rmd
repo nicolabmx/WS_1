@@ -20,4 +20,5 @@ Grabé otro video, sobre como instalar GIT y configurarlo en RStudio:
 Si estás interesado puedes empezar tu cuenta en [GitHub](https://github.com) y tener tus propios repositorios. También puedes mirar las cuentas de otra gente, copiar, colaborar y mejorar códigos en un **caganal** de lenguajes.
 Otra plataforma que puedes mirar: [Bitbucket](https://bitbucket.org/), quizá sea mejor, según tu uso. 
 
+
 Topes!
