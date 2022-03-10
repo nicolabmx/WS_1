@@ -10,7 +10,7 @@ En mi colegio (o secundaria), teníamos un cura como rector que decía: "el que 
 
 Con el control de versiones puedes mirar cada cambio en tu archivo o archivos uno a uno, puedes regresar a una versión anterior, tener varias branches y además, quizá más importante, cambios que otros hagan cuando estás colaborando en un proyecto. Para muchos de los que leen esto (de todos los 3 o 4 lectores de mi blog) esta info es conocida, pero si estás comenzando con Data Science, o si lo has hecho durante mucho tiempo pero sin utilizar GIT, esto podrá cambiar tu vida más que herbalife (ja...ja ...).
 
-Grabé otro video, sobre como instalar GIT y configurarlo en RStudio:
+Grabé otro video sobre como instalar GIT y configurarlo en RStudio:
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/rdHN7EQP_8Y" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen="" title="YouTube Video"></iframe>
