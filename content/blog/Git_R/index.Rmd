@@ -4,7 +4,6 @@ author: "Daniel Nicola"
 date: '2022-03-11'
 categories: ["R Posts", "R en Español"]
 tags: ["R Markdown", "R", "Data Science", "Git"]
-draft: false
 ---
 
 En mi colegio (o secundaria), teníamos un cura como rector que decía: "el que controla su lengua, es varón perfecto". Cambiemos a: "el que controla sus versiones, es buen coder mi brother". También podríamos decir: "deja de hablar huevadas"... pero bueno, al tema. El control de versiones acolita, acolita un montón, sin importar el tipo de archivo con el que trabajes. Puedes olvidarte de: tesis_v1, tesis_v2,....tesis_final, tesis_final_final, tesis_la_vencida, ...tesis_final_final_final_imprimir...
