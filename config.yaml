@@ -41,8 +41,8 @@ params:
   math:
     renderer: katex
   navallcaps: yes
-  orgLocal: Anywhere
-  orgName: RStudio
+  orgLocal: 
+  orgName: Daniel Nicola
   sharing_image: /img/papillons.jpg
   social:
     - icon: linkedin
