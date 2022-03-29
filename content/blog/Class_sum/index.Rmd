@@ -7,7 +7,7 @@ tags: ["R Markdown"]
 ---
 
 
-Thanks to friends in the "Escuela Politécnica Nacional" in Ecuador, I got the chance to be in front of students after a loooong time off the classroom. Well in front meaning in front of my laptop during a zoom call, but still... 
+Thanks to friends in the "Escuela Politécnica Nacional" in Ecuador, I got the chance to be in front of students after a loooong time off the classroom and talk about *Data Science with `R`*. Well in front meaning in front of my laptop during a zoom call, but still... 
 
 It's never boring talking about stuff I like, but I gotta admit, sometimes I doubt if my talking/explanations are fulfilling the students' expectations. Nonetheless, after asking them for anonymous and sincere feedback, I realized that I did quite a good job.
 
