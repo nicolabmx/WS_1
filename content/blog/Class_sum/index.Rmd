@@ -7,11 +7,11 @@ tags: ["R Markdown"]
 ---
 
 
-Thanks to friends in the "Escuela Politécnica Nacional" in Ecuador, I got the chance to be in front of students after a loooong time off the classroom and talk about *Data Science with `R`*. Well in front meaning in front of my laptop during a zoom call, but still... 
+Thanks to friends at the "Escuela Politécnica Nacional" in Ecuador, I got the chance to be in front of students after a loooong time off the classroom and talk about *Data Science with `R`*. Well in front meaning in front of my laptop during a zoom call, but still... 
 
 It's never boring talking about stuff I like, but I gotta admit, sometimes I doubt if my talking/explanations are fulfilling the students' expectations. Nonetheless, after asking them for anonymous and sincere feedback, I realized that I did quite a good job.
 
-BUT... most recommendations were related to using real data, real examples, same stuff but applied to a real scenario. So, just in case, if you're reading this and happen to have data that needs analyzing/modeling and you would like to have some results presented in a cool way, hit me up, maybe we can join efforts and get a win-win-win-...-win situation.
+BUT... most recommendations were related to using real data, real examples, same stuff but applied to a real scenario. So, just in case, if you're reading this and happen to have data that need analyzing/modeling and you would like to have some results presented in a cool way, hit me up, maybe we can join efforts and get a win-win-win-...-win situation.
 
 `Shiny` dashboards and `RMarkdown` reports were also in the list of recommendations I got. So all in all, I'm happy to see that more people are getting interested in using `R`. It's definitely motivating for all of us `R` users.
 
