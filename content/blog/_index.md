@@ -14,7 +14,7 @@ layout: list
 show_author_byline: true
 show_button_links: false
 show_post_date: true
-show_post_thumbnail: true
+show_post_thumbnail: false
 # sidebar:
 #   author: Daniel Nicola
 #   description: "This is a fully featured blog that supports categories,\ntags, series,
