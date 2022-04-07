@@ -1,0 +1,196 @@
+---
+title: "Tu primera Shiny App (?)"
+author: "Daniel Nicola"
+date: '2022-04-07'
+categories: ["R Posts", "R en Español"]
+tags: ["R Markdown", "R"]
+---
+
+Shiny es una be---lle---za para hacer dashboards y apps con R. Con el tiempo necesario, puedes  tener estilos, ya sea con archivos .css o con `bslib`, y tener apps que se ven muy "chéveres". Pero mientras tanto, si quieres ver una app sencilla para aprender, aquí tienes una buena oportunidad!
+
+El funcionamiento de una app es bastante simple en realidad, tienes una "User Interface" (ui) y un "Server". La ui puede ser creada de diferentes maneras, diferentes tamaños, puedes tener inputs que afectan a la app de diferentes maneras... todo esto con la ayuda de las funciones que tengas en el server.
+
+Junto a estudiantes de un workshop que tuve el chance de dictar, creamos una app en clase, en unos cuantos minutos. El dashboard es bastante sencillo pero te puede servir para tener una idea clara del funcionamiento y de las conexiones entre la ui y el server. Algo explico en este video:
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/Dlvz5VG_I24" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen="" title="YouTube Video"></iframe>
+
+</div>
+
+El código puedes verlo en Github: [ APP en REPO](https://github.com/nicolabmx/R_workshop/tree/main/5.%20R%20Shiny/app_25_3)
+
+Y aquí te explico brevemente las secciones qu tiene el código:
+
+1. Librerías:
+```{r, eval=FALSE}
+
+library(shinydashboard)
+library(shiny)
+library(shinyjs)
+library(shinycssloaders)
+library(shinythemes)
+library(shinyWidgets)
+library(gapminder)
+library(plotly)
+library(leaflet)
+```
+
+2. Datos que utilizarás:
+```{r, eval=FALSE}
+
+datos_input <- gapminder::gapminder
+```
+
+3. La UI (tiene un header, un sidebar y un body)
+  - Header
+```{r, eval=FALSE}
+
+titulo <- list(tags$head(tags$style()),
+               HTML('<img src = "nicola_logo1.png", height = "51",
+          style = "float:left"/>' , '<p style = "color:black"></p>'),
+               title = "Ejemplo_25_3_22")
+header <- dashboardHeader(
+  title = titulo,
+  tags$li(actionLink("openModal", label = "",
+                     icon = icon("info")),
+          class = "dropdown")#,
+  #dropdownMenu(
+   # type = "notifications",
+    #notificationItem("Notificacion_1")
+  #)
+)
+```
+  - Sidebar
+```{r, eval=FALSE}  
+sidebar <- dashboardSidebar(
+  sidebarMenu(
+    menuItem("Item 1", tabName = "Item_1", icon = icon("book")),
+    menuItem("Item 2", tabName = "Item_2", icon = icon("table")),
+    menuItem("La yapa", tabName = "La_Yapa"),
+    sliderInput(
+      inputId = "Slider_1",
+      label = "Numero",
+      min = 0,
+      max = 100,
+      value = 50
+    ),
+    textInput("text_1",
+              label = "Skin:")
+  )
+)
+```
+  - Body
+```{r, eval=FALSE}
+body <- dashboardBody(
+  #Si tienes un archivo css para estilo de la app
+  #includeCSS("path_al_archivo.css")
+  tabItems(
+    tabItem(tabName = "Item_1",
+            fluidRow(
+              box(title = "Caja 1", width = 12,
+                  collapsible = TRUE, collapsed = TRUE)
+            ),
+            fluidRow(
+              column(6,
+                     valueBox(15, icon = icon("star"),
+                              subtitle = "Número de asistentes de hoy (estático)",
+                              width = 6)),
+              column(6,
+                     valueBoxOutput("caja_server"))
+            )),
+    tabItem(tabName = "Item_2",
+            fluidRow(
+              column(4, 
+                     selectInput("Input_1", label = "Continente(s)",
+                                 choices = levels(as.factor(datos_input$continent)),
+                                 multiple =  TRUE,
+                                 selected = "Africa")),
+              column(4,
+                     selectInput("Year_1", label = "Desde",
+                                 choices = levels(as.factor(datos_input$year)))),
+              column(4,
+                     selectInput("Year_2", label = "Hasta",
+                                 choices = levels(as.factor(datos_input$year))),
+                     selected = max(datos_input$year))
+            )
+            ,
+            plotlyOutput("Plot_Gap")),
+    tabItem(tabName = "La_Yapa",
+            numericInput("long", 
+                         label = "Longitud",
+                         value = -78.4887,),
+            numericInput("lat",
+                         label = "Latitud",
+                         value = -0.2102),
+            leafletOutput("Map_1"))
+  )
+)
+```
+Creas la UI:
+```{r, eval=FALSE}
+ui <- dashboardPage(
+  skin = "blue",
+  header = header,
+  sidebar = sidebar,
+  body = body
+)
+```
+
+4. El server:
+```{r, eval=FALSE}
+
+### server ####
+
+server <- function(input, output, session) {
+  observeEvent(input$openModal, {
+    showModal(
+      modalDialog(title = "Dashboard Author/Maintainer: Juanito",
+                  p("Contacto:"),
+                  p("correo_de_juanito@maildir.com"),
+                  p("agregar más líneas con más info..."))
+    )
+  })
+  output$caja_server <- renderValueBox({
+    valueBox(
+      value = input$Slider_1,
+      subtitle = "Valor del slider"
+    )
+  })
+  
+  output$Plot_Gap <- renderPlotly({
+    plot_gapminder <- datos_input %>%
+      filter(continent== input$Input_1,
+             year>=input$Year_1,
+             year<=input$Year_2) %>%
+      ggplot(aes(year, lifeExp, color = country, size = gdpPercap)) +
+      geom_point() + 
+      labs(title = paste0("Grafico de ", input$Input_1)) +
+      xlab("Año") +
+      ylab("Esperanza de Vida") 
+    a <- ggplotly(plot_gapminder)
+    
+  })
+  
+  output$Map_1 <- renderLeaflet({
+    map <- leaflet() %>% 
+      addTiles() %>%
+      leaflet::addCircleMarkers(lng = input$long, lat = input$lat)
+  })
+  
+  output$TEXT_1 <- renderText({
+    
+    input$text_1
+  })
+  
+} 
+```
+5. Y luego creas la app, pasando la ui y el server que has creado:
+```{r, eval=FALSE}
+app <- shinyApp(ui, server)
+```
+
+Espero que ayude para empezar!
+
+Es una app sencilla que puede ser creada en ~20 minutos. No tienes R o RStudio? No tienes interés en R pero quieres ver la app? Mírala funcionando en [RStudio Connect.](https://dnicola.shinyapps.io/app_example/?_ga=2.60135085.1250031489.1649325183-719871609.1649325183)
+
+
