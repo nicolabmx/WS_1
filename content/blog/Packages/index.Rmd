@@ -1,5 +1,5 @@
 ---
-title: "R Top Pckages"
+title: "R Top Packages"
 author: "Daniel Nicola"
 date: '2022-05-09'
 categories: ["R Posts"]
@@ -10,7 +10,7 @@ As of today, `R` is one of the most popular languages for Data Science. Being so
 
 Having mentioned this, you would realise that you can find several packages doing similar things and some being better than others. To make your life easier and thanks to a nice conversation I had with friends/colleagues, here's a list to the fundamental packages you would need for your day by day Data Science.
 
-- The `tidyverse` [ (check it out here)](https://www.tidyverse.org): Not really a package but a collection of packages, including `readr` to read data files,`tidyr` to get your data tidy, `dplyr` to manipulate your data and `ggplot` to create visualizations. Of course there are more but these might be the most used in your daily work.
+- The `tidyverse` [ (check it out here)](https://www.tidyverse.org): Not really a package but a collection of packages, including `readr` to read data files, `tidyr` to get your data tidy, `dplyr` to manipulate your data and `ggplot` to create visualizations. Of course there are more but these might be the most used in your daily work.
 
 - `knitr` if you're thinking on creating reports with `RMarkdown`. If you're planning to mix some languages, you can also take a look at `quarto` [ (here)](https://quarto.org).
 
