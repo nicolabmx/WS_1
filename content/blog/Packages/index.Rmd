@@ -1,0 +1,23 @@
+---
+title: "R Top Pckages"
+author: "Daniel Nicola"
+date: '2022-05-09'
+categories: ["R Posts"]
+tags: ["R"]
+---
+
+As of today, `R` is one of the most popular languages for Data Science. Being so popular, you can find 18872 packages published on [CRAN](https://cran.r-project.org) as of today. Not to mention all packages that are being developed and can already be used.
+
+Having mentioned this, you would realise that you can find several packages doing similar things and some being better than others. To make your life easier and thanks to a nice conversation I had with friends/colleagues, here's a list to the fundamental packages you would need for your day by day Data Science.
+
+- The `tidyverse` [ (check it out here)](https://www.tidyverse.org): Not really a package but a collection of packages, including `readr` to read data files,`tidyr` to get your data tidy, `dplyr` to manipulate your data and `ggplot` to create visualizations. Of course there are more but these might be the most used in your daily work.
+
+- `knitr` if you're thinking on creating reports with `RMarkdown`. If you're planning to mix some languages, you can also take a look at `quarto` [ (here)](https://quarto.org).
+
+- `Shiny` is the way to go if you want to create dashboards and apps. A whole world of applications can be created. You can start with a small app like [ this](https://www.youtube.com/watch?v=Dlvz5VG_I24) (sorry it's only in spanish). You can also find lots of examples [here](https://shiny.rstudio.com/gallery/)
+
+- `plotly` [ (check it out here)](https://plotly.com/r/) will allow you to create interactive graphs (you can also start with ggplot and convert these graphs with `ggplotly`).
+
+- And last but not least, the `tidymodels` framework [ (check it out here)](https://www.tidymodels.org) which you can use to prepare data, create models and summarise results, using the `tidyverse` principles.
+
+Of course there might be some useful packages I've forgotten (some are included in the `tidyverse`) but this list covers most of the things you need to go from zero to hero with data. Start by reading in some data and manipulating it with the `tidyverse` packages; train, test and get results from models with `tidymodels`; and create cool visualizations (`ggplot` and `plotly`), dashboards (`Shiny`) and reports (`knitr` and `quarto`) to communicate your results.
