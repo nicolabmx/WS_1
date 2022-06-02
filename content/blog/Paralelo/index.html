@@ -1,0 +1,55 @@
+---
+title: "R en Paralelo (la manera tradicional)"
+author: "Daniel Nicola"
+date: '2022-06-02'
+categories: ["R Posts", "R en Español"]
+tags: ["R"]
+---
+
+
+
+<p>La librería <code>parallel</code> ha estado activa desde hace varios años y ha sido muy poco utilizada por personas como yo. Esta no es la única manera de realizar cálculos en paralelo en <code>R</code> pero es quizá la más tradicional y la manera en que se la utiliza es similar a otras librerías/paquetes. Simplemente se deben seguir 3 pasos (descritos líneas abajo). Esta vez, he utilizado solamente <code>apply</code> y <code>parApply</code> pero claro, puedes hacer un montón de aplicaciones en paralelo. Si estás interesado en realizar más cosas en paralelo, puedes echar un ojo a <code>doParallel</code> y <code>foreach</code> para construir loops y correrlos en más de un core. Una librería más reciente es <code>future</code> que la puedes encontrar <a href="https://futureverse.org">aquí</a>. Si utilizas el <code>tidyverse</code>, en especial la librería <code>purrr</code> se te hará fácil trabajar con <code>furrr</code>.</p>
+<p>Si estás interesada/o en entrenar modelos en paralelo, quizá es bueno saber que la computación en paralelo viene integrada a varios paquetes/librerías que se utilizan para esto. Por ejemplo, si trabajas con <code>tidymodels</code> una línea de código <code>doParallel::registerDoParallel()</code> antes de hacer el tuning de un grid (<code>tune_grid(...)</code>) es suficiente para que trabajen varios cores en lugar de uno sólo, ahorrándote tiempo significativamente.</p>
+<div id="r-en-paralelo" class="section level1">
+<h1>R en Paralelo</h1>
+<ul>
+<li>Crea un cluster</li>
+<li>Corre un código</li>
+<li>Detienes el cluster</li>
+</ul>
+Un ejemplo básico de uso de <code>R</code> en paralelo está en este video:
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+<p><iframe src="https://www.youtube.com/embed/fhsFdXEy-YA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen="" title="YouTube Video"></iframe></p>
+</div>
+<p>El código les dejo aquí. Topes!</p>
+<pre class="r"><code>library(parallel)
+library(tidyverse)</code></pre>
+<pre><code>## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──</code></pre>
+<pre><code>## ✓ ggplot2 3.3.5     ✓ purrr   0.3.4
+## ✓ tibble  3.1.6     ✓ dplyr   1.0.8
+## ✓ tidyr   1.2.0     ✓ stringr 1.4.0
+## ✓ readr   2.1.2     ✓ forcats 0.5.1</code></pre>
+<pre><code>## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()</code></pre>
+<pre class="r"><code>#DATOS
+data &lt;- matrix(rnorm(100000*20, 1000, 500), nrow = 100000, ncol = 20) %&gt;%
+  as.data.frame() %&gt;%
+  rename_all(function(x) paste0(&quot;col_&quot;, 1:20))
+
+num_cores &lt;- detectCores()
+
+#Crear cluster
+cl &lt;- makeCluster(num_cores-1)
+
+#Código normal
+system.time(apply(data, 2, mean))</code></pre>
+<pre><code>##    user  system elapsed 
+##   0.331   0.009   0.341</code></pre>
+<pre class="r"><code>#Código en paralelo
+system.time(parApply(cl, data, 2, mean))</code></pre>
+<pre><code>##    user  system elapsed 
+##   0.044   0.007   0.107</code></pre>
+<pre class="r"><code>#Detener el cluster
+stopCluster(cl)</code></pre>
+</div>
