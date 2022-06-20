@@ -10,13 +10,13 @@ intro: |
   
   Back in my home country, lovely Ecuador, I studied mechanical engineering and an MBA. I also did a Data Analysis, Process Improvement and Decision Making (yeap, short name) Master in Spain and a PhD in Management here in Vienna.
   
-  I'm always interested in learning, but if given the chance, I enjoy teaching here and there. This is one of the reasons why I created this site. Do check out the blog section for posts about R and anything really.
+  I'm always interested in learning, but if given the chance, I enjoy teaching here and there. This is one of the reasons why I created this site. Do check out the blog section for posts about Data Science(mostly R) and anything really.
   
   My picture was taken by mi gf, who is a very talented designer (she even did my home logo).
   
   -------------------------------------------------------------------
   
-  (I'm open for collaboration, research and voluntary activities)
+  I'm open for collaboration, research and voluntary activities. 
   
   
   
