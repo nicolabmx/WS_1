@@ -2,7 +2,7 @@
 title: "Tu primera Shiny App (?)"
 author: "Daniel Nicola"
 date: '2022-04-07'
-categories: ["R Posts"]
+categories: ["R Posts", "R en Español"]
 tags: ["R Markdown", "R"]
 ---
 
